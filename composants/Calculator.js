@@ -29,7 +29,7 @@ export default function Calculator() {
             if(value > 8999){
                 setmessageOver('It\'s over 9000 !!!');
                 // console.log(messageOver);
-                
+        }        
         } catch (error) {
             if (error instanceof SyntaxError) {
                 alert('erreur dans le calcul')
