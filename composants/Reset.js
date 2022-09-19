@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default function Reset() {
+export default function Reset({resetClick}) {
   return (
     <div>
-        <button name="reset">AC</button>
+        <button onClick={resetClick} name="reset">AC</button>
     </div>
   )
 }

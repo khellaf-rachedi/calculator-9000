@@ -34,9 +34,13 @@ export default function Calculator() {
             if (error instanceof SyntaxError) {
                 alert('erreur dans le calcul')
                 console.log(error);
-                setValue('')
-                setmessageOver('')
+                setValue('');
+                setmessageOver('');
             }
+        }
+        const Resetvalue = function(){
+            setValue('');
+            setmessageOver('');
         }
     }
 
@@ -47,7 +51,7 @@ export default function Calculator() {
         <AmazingNumberButton calculette={Calculette} />
         <GreatOperationButton calculette={Calculette}/>
         <MagnificientEqualButton resultat={Result} />
-        <Reset />
+        <Reset resetClick={Resetvalue} />
         <ItSOverNineThousand message={messageOver} />
     </div>
 
